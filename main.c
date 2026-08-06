@@ -15,13 +15,13 @@ int get_max(int x, int y) {
 	return b;}
 	
 int main(void) {
-	int n; 
+	int x, y; 
 	int result;
 	
-	scanf("%d", &n);
-	result = square(n);
+	scanf("%d %d", &x, &y);
+	result = get_max(x, y);
 	
-	printf("%d*%d = %d", n, n, result);
+	printf("biggest value = %d", result);
 	
 	return 0;
 }
